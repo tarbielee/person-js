@@ -6,19 +6,19 @@ let person = new Person("Ryan", 30, "male", [
 ]);
 
 describe("person", function() {
-  it("it should result the whole sentence", function() {
+  it("should return name", function() {
     expect( person.name).toBe("Ryan")
   }) 
-  it("a", function() {
+  it("should return age", function() {
   expect( person.age).toBe(30)
   })
-  it("b", function(){
+  it("should return gender", function(){
     expect( person.gender).toBe("male")
   })
-  it("c", function(){
+  it("should return interests", function(){
     expect( person.interests[0]).toBe('being a hardarse')
   })
-  it("d", function(){
+  it("should return the whole sentence", function(){
     expect(person.hello()).toBe("Hello,my name is Ryan I am 30 years old. My interests are being a hardarse,agile,ssd hard drives")
   })
 });

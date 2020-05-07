@@ -9,9 +9,9 @@ class Person {
   }
 
   hello() {
-    return "Hello,my name is " +
+    return "Hello, my name is " +
       this.name +
-      " I am " +
+      " and I am " +
       this.age +
       " years old. My interests are " +
       this.interests
@@ -20,7 +20,10 @@ class Person {
 }
 
 let person = new Person("Ryan", 30, "male", [
-  "being a hardarse", "agile", "ssd hard drives"
+  "being a hardarse", " agile and ssd hard drives."
 ]);
+
+let greeting = person.hello()
+console.log(greeting); 
 
 module.exports = Person
